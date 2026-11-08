@@ -11,6 +11,7 @@
             --card-bg: #1e293b;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
+            --accent: #818cf8;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,7 +48,7 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
         }
         .card h2 {
-            color: #818cf8;
+            color: var(--accent);
             margin-top: 0;
             border-bottom: 2px solid #334155;
             padding-bottom: 0.5rem;
@@ -66,6 +67,45 @@
             padding: 0.4rem 0.8rem;
             border-radius: 20px;
             font-size: 0.9rem;
+        }
+        .project-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #334155;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .project-item h3 {
+            margin: 0 0 0.3rem 0;
+            color: #f1f5f9;
+            font-size: 1.1rem;
+        }
+        .project-item p {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: #334155;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: var(--primary);
         }
         footer {
             text-align: center;
@@ -92,11 +132,31 @@
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>AI Data Annotation</li>
-                <li>HTML / CSS</li>
+                <li>Moroccan Arabic (Darija) NLP</li>
                 <li>Prompt Engineering</li>
                 <li>Multilingual Evaluation</li>
-                <li>Git & GitHub</li>
+                <li>HTML / CSS / Git</li>
             </ul>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Arabic & Darija Data Evaluation</h3>
+                <p>Evaluated and refined Machine Learning datasets for Arabic and Moroccan Arabic NLP models, ensuring high linguistic accuracy and alignment.</p>
+            </div>
+            <div class="project-item">
+                <h3>Structured Prompting & QA Testing</h3>
+                <p>Designed structured prompt templates and tested AI text generation models for context adherence, formatting precision, and safety guidelines.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="mailto:ibtissamgasi8@gmail.com" class="contact-btn">✉️ Email: ibtissamgasi8@gmail.com</a>
+                <a href="https://wa.me/212604448185" class="contact-btn">💬 WhatsApp: +212 604 448 185</a>
+            </div>
         </div>
     </div>
 
