@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+<g stroke="#818cf8" stroke-opacity=".35"><path d="M60 40L180 90 300 30 420 110 540 50M180 90L240 200 380 220 420 110M240 200L120 250M380 220L520 250"/></g>
+<g fill="#a78bfa"><circle cx="60" cy="40" r="4"/><circle cx="180" cy="90" r="5"/><circle cx="300" cy="30" r="4"/><circle cx="420" cy="110" r="5"/><circle cx="540" cy="50" r="4"/><circle cx="240" cy="200" r="4"/><circle cx="380" cy="220" r="5"/><circle cx="120" cy="250" r="3"/><circle cx="520" cy="250" r="3"/></g>
+</svg>
