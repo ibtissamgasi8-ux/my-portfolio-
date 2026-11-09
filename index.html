@@ -1,283 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ibtissam Gasi | AI Data & Prompt Engineering</title>
+<title>Ibtissam Gasi | AI Data Annotator &amp; Prompt Engineering</title>
 <meta name="description" content="Ibtissam Gasi - AI Data Annotation, Prompt Engineering, Arabic and Moroccan Darija NLP, and AI Model Evaluation.">
-
-<style>
-:root {
-    --primary: #6366f1;
-    --bg-color: #0f172a;
-    --card-bg: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent: #818cf8;
-}
-
-* { box-sizing: border-box; scroll-behavior: smooth; }
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    margin: 0;
-    line-height: 1.7;
-}
-
-header {
-    background: linear-gradient(135deg, #4f46e5, #9333ea);
-    padding: 3.5rem 1rem;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    color: #e2e8f0;
-    font-size: 1.1rem;
-    margin-top: 0.7rem;
-}
-
-.container {
-    max-width: 850px;
-    margin: -1.5rem auto 2rem;
-    padding: 0 1rem;
-}
-
-.card {
-    background-color: var(--card-bg);
-    border-radius: 12px;
-    padding: 1.7rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,.2);
-}
-
-.card h2 {
-    color: var(--accent);
-    margin-top: 0;
-    border-bottom: 2px solid #334155;
-    padding-bottom: .6rem;
-    font-size: 1.4rem;
-}
-
-.card p {
-    color: var(--text-muted);
-}
-
-.skills-category {
-    margin-bottom: 1.3rem;
-}
-
-.skills-category h3 {
-    color: #c4b5fd;
-    font-size: 1rem;
-    margin-bottom: .6rem;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .6rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills-list li {
-    background-color: #334155;
-    color: #e2e8f0;
-    padding: .45rem .85rem;
-    border-radius: 20px;
-    font-size: .9rem;
-}
-
-.project-item {
-    margin-bottom: 1.3rem;
-    padding-bottom: 1.3rem;
-    border-bottom: 1px solid #334155;
-}
-
-.project-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.project-item h3 {
-    margin: 0 0 .5rem;
-    color: #f1f5f9;
-    font-size: 1.15rem;
-}
-
-.project-label {
-    color: #a5b4fc;
-    font-size: .8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.project-item p {
-    margin: .4rem 0;
-    color: var(--text-muted);
-    font-size: .95rem;
-}
-
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-}
-
-.contact-btn {
-    display: inline-block;
-    background-color: #334155;
-    color: #fff;
-    text-decoration: none;
-    padding: .8rem 1rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: background .3s;
-}
-
-.contact-btn:hover {
-    background-color: var(--primary);
-}
-
-footer {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-muted);
-    font-size: .85rem;
-}
-
-@media(max-width:600px) {
-    header h1 { font-size: 2rem; }
-    .card { padding: 1.2rem; }
-}
-</style>
+<meta name="theme-color" content="#0b0b2b">
+<meta property="og:title" content="Ibtissam Gasi | AI Data Annotator &amp; Prompt Engineering">
+<meta property="og:description" content="Arabic &amp; Moroccan Darija NLP | AI Model Evaluation">
+<meta property="og:image" content="assets/images/profile.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Ibtissam Gasi</h1>
-    <p>AI Data Annotator | Prompt Engineering</p>
-    <p>Arabic & Darija NLP | AI Model Evaluation</p>
+<header class="hero" id="home">
+  <img class="hero-net" src="assets/images/hero-network.svg" alt="" aria-hidden="true">
+  <div class="hero-inner">
+    <div class="avatar">
+      <img src="assets/images/profile.jpg" alt="Portrait of Ibtissam Gasi" width="640" height="640">
+    </div>
+    <div class="hero-text">
+      <h1>Ibtissam Gasi</h1>
+      <p class="title">AI Data Annotator | Prompt Engineering</p>
+      <p class="spec">Arabic &amp; Darija NLP | AI Model Evaluation</p>
+      <p class="tagline">Turning data into intelligent solutions</p>
+      <nav class="hero-nav" aria-label="Main">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact me</a>
+      </nav>
+    </div>
+  </div>
 </header>
 
-<div class="container">
+<main class="container">
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I am passionate about Artificial Intelligence,
-            Prompt Engineering, and Natural Language Processing.
-            My areas of focus include Arabic and Moroccan Darija
-            text analysis, AI data annotation, multilingual evaluation,
-            structured prompt design, and AI response assessment.
-        </p>
-        <p>
-            I enjoy exploring how AI models understand language,
-            follow instructions, and generate responses.
-            I am continuously developing my technical and analytical
-            skills while exploring practical AI applications.
-        </p>
+  <section class="card about" id="about" aria-labelledby="about-h">
+    <div class="about-text">
+      <h2 id="about-h"><span class="ico" aria-hidden="true">👤</span>About Me</h2>
+      <p>I am passionate about <strong>Artificial Intelligence</strong>, <strong>Prompt Engineering</strong>, and <strong>Natural Language Processing</strong>. My areas of focus include Arabic and Moroccan Darija text analysis, AI data annotation, multilingual evaluation, structured prompt design, and AI response assessment.</p>
+      <p>I enjoy exploring how AI models understand language, follow instructions, and generate responses. I am continuously developing my technical and analytical skills while exploring practical AI applications.</p>
     </div>
+    <img class="about-art" src="assets/images/about-ai.svg" alt="Illustration of a laptop displaying AI with a glowing brain above it" loading="lazy">
+  </section>
 
-    <div class="card">
-        <h2>Skills</h2>
-
-        <div class="skills-category">
-            <h3>AI & Data</h3>
-            <ul class="skills-list">
-                <li>AI Data Annotation</li>
-                <li>AI Model Evaluation</li>
-                <li>Data Quality Assurance</li>
-                <li>Sentiment Analysis</li>
-                <li>Text Classification</li>
-                <li>Dataset Validation</li>
-            </ul>
-        </div>
-
-        <div class="skills-category">
-            <h3>Language & NLP</h3>
-            <ul class="skills-list">
-                <li>Moroccan Arabic (Darija) NLP</li>
-                <li>Arabic NLP</li>
-                <li>French Language Evaluation</li>
-                <li>Multilingual Evaluation</li>
-                <li>Text Analysis</li>
-            </ul>
-        </div>
-
-        <div class="skills-category">
-            <h3>Prompt Engineering</h3>
-            <ul class="skills-list">
-                <li>Prompt Engineering</li>
-                <li>Structured Prompt Design</li>
-                <li>Prompt Testing</li>
-                <li>AI Response Evaluation</li>
-                <li>Instruction Following Evaluation</li>
-            </ul>
-        </div>
-
-        <div class="skills-category">
-            <h3>Technical Skills</h3>
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
+  <section class="card" id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h"><span class="ico" aria-hidden="true">★</span>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>AI &amp; Data</h3>
+        <ul>
+          <li>AI Data Annotation</li><li>AI Model Evaluation</li><li>Data Quality Assurance</li>
+          <li>Sentiment Analysis</li><li>Text Classification</li><li>Dataset Validation</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Language &amp; NLP</h3>
+        <ul>
+          <li>Moroccan Arabic (Darija) NLP</li><li>Arabic NLP</li><li>French Language Evaluation</li>
+          <li>Multilingual Evaluation</li><li>Text Analysis</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Prompt Engineering</h3>
+        <ul>
+          <li>Prompt Engineering</li><li>Structured Prompt Design</li><li>Prompt Testing</li>
+          <li>AI Response Evaluation</li><li>Instruction Following Evaluation</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML</li><li>CSS</li><li>Git &amp; GitHub</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-        <h2>Featured Projects</h2>
-
-        <div class="project-item">
-            <div class="project-label">PROJECT 01 · DATA EVALUATION</div>
-            <h3>Arabic & Darija Data Evaluation</h3>
-            <p>
-                Evaluated and refined Machine Learning datasets
-                for Arabic and Moroccan Arabic NLP models,
-                ensuring high linguistic accuracy and alignment.
-            </p>
+  <section class="card" id="projects" aria-labelledby="projects-h">
+    <h2 id="projects-h"><span class="ico" aria-hidden="true">💼</span>Featured Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <img src="assets/images/project-darija.svg" alt="Arabic and Darija text samples with a validation check" loading="lazy">
+        <div>
+          <p class="label">Data Evaluation</p>
+          <h3>Arabic &amp; Darija Data Evaluation</h3>
+          <p>Evaluated and refined Machine Learning datasets for Arabic and Moroccan Arabic NLP models, ensuring high linguistic accuracy and alignment.</p>
         </div>
-
-        <div class="project-item">
-            <div class="project-label">PROJECT 02 · PROMPT ENGINEERING & QA</div>
-            <h3>Structured Prompting & QA Testing</h3>
-            <p>
-                Designed structured prompt templates and tested
-                AI text generation models for context adherence,
-                formatting precision, and safety guidelines.
-            </p>
+      </article>
+      <article class="project">
+        <img src="assets/images/project-prompt.svg" alt="Terminal window with a Prompt, Test, Optimize, Evaluate checklist" loading="lazy">
+        <div>
+          <p class="label">Prompt Engineering &amp; QA</p>
+          <h3>Structured Prompting &amp; QA Testing</h3>
+          <p>Designed structured prompt templates and tested AI text generation models for context adherence, formatting precision, and safety guidelines.</p>
         </div>
+      </article>
+      <article class="project">
+        <img src="assets/images/project-sentiment.svg" alt="Donut chart showing positive, negative and neutral sentiment categories" loading="lazy">
+        <div>
+          <p class="label">Text Classification</p>
+          <h3>Sentiment Analysis</h3>
+          <p>Classifying text as Positive, Negative, or Neutral to practise sentiment labelling and analysis.</p>
+        </div>
+      </article>
     </div>
+  </section>
 
-    <div class="card">
-        <h2>Contact Me</h2>
-        <div class="contact-links">
-            <a href="mailto:ibtissamgasi8@gmail.com" class="contact-btn">
-                ✉️ Email: ibtissamgasi8@gmail.com
-            </a>
-            <a href="https://wa.me/212604448185" class="contact-btn">
-                💬 WhatsApp: +212 604 448 185
-            </a>
-        </div>
+  <section class="card contact" id="contact" aria-labelledby="contact-h">
+    <div>
+      <h2 id="contact-h"><span class="ico" aria-hidden="true">✉</span>Contact Me</h2>
+      <div class="contact-links">
+        <a class="pill" href="mailto:ibtissamgasi8@gmail.com">✉️ Email: ibtissamgasi8@gmail.com</a>
+        <a class="pill" href="https://wa.me/212604448185" target="_blank" rel="noopener">💬 WhatsApp: +212 604 448 185</a>
+      </div>
     </div>
+    <p class="connect">Let’s Connect</p>
+  </section>
 
-</div>
+</main>
 
-<footer>
-    <p>© 2026 Ibtissam Gasi. All rights reserved.</p>
-</footer>
+<footer>© 2026 Ibtissam Gasi. All rights reserved.</footer>
 
 </body>
 </html>
